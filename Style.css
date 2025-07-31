@@ -4,7 +4,7 @@ body {
       margin: 20px;
     }
 
-    #calendar {
+   #calendar {
       position: relative;
       max-width: 1024px;
       margin: 0 auto;
@@ -16,13 +16,13 @@ body {
 
     /* Header layout fixes */
     .calendar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
 
     .calendar-logo {
       width: 120px;
@@ -31,20 +31,17 @@ body {
     }
 
     .title-and-controls {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  min-width: 0;
-}
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 1;
+    }
 
     #calendarTitle {
       color: #002F6C;
       font-size: 36px;
       margin-bottom: 10px;
       text-align: center;
-      width: 100%;
-    }
     }
 
     .filter-controls {
