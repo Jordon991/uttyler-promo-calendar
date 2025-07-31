@@ -43,6 +43,7 @@ body {
       margin-bottom: 10px;
       text-align: center;
       margin: 0 auto 10px auto;
+          transform: translateX(-20px)
     }
 
     .filter-controls {
