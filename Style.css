@@ -42,6 +42,7 @@ body {
       font-size: 36px;
       margin-bottom: 10px;
       text-align: center;
+      margin: 0 auto 10px auto;
     }
 
     .filter-controls {
