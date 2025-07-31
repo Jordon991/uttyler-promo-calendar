@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Promotional Calendar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+<div id="calendar">
+  <div class="calendar-header">
+    <img src="https://hoopdirt.com/wp-content/uploads/2023/03/tyler.png" alt="UT Tyler Logo" class="calendar-logo" />
+    <div class="title-and-controls">
+      <h1 id="calendarTitle">Promotional Calendar</h1>
+      <div class="filter-controls" role="region" aria-label="Calendar Filters">
+        <label for="sportFilter">Filter by Sport
+          <select id="sportFilter" aria-controls="daysGrid">
+            <option value="all">All Sports</option>
+            <option value="m_soccer">M. Soccer</option>
+            <option value="w_soccer">W. Soccer</option>
+            <option value="volleyball">Volleyball</option>
+          </select>
+        </label>
+        <label for="typeFilter">Filter by Event Type
+          <select id="typeFilter" aria-controls="daysGrid">
+            <option value="all">All Types</option>
+            <option value="athletic">Athletic</option>
+            <option value="promo">Promotional</option>
+          </select>
+        </label>
+        <label for="searchInput">Search Events
+          <input type="search" id="searchInput" placeholder="Search events..." aria-controls="daysGrid" />
+        </label>
+        <div class="calendar-buttons">
+          <button id="toggleViewBtn" aria-pressed="false">List View</button>
+          <button id="printBtn">Print</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="month-year-wrapper">
+    <div id="monthYear">
+      <button id="prevMonth" aria-label="Previous Month">&#9664;</button>
+      <span id="monthYearText" aria-live="polite" aria-atomic="true"></span>
+      <button id="nextMonth" aria-label="Next Month">&#9654;</button>
+    </div>
+  </div>
+
+  <div class="day-labels" role="row">
+    <div role="columnheader">Sun</div>
+    <div role="columnheader">Mon</div>
+    <div role="columnheader">Tue</div>
+    <div role="columnheader">Wed</div>
+    <div role="columnheader">Thu</div>
+    <div role="columnheader">Fri</div>
+    <div role="columnheader">Sat</div>
+  </div>
+
+  <div class="days-grid" id="daysGrid" role="grid" aria-label="Monthly calendar days"></div>
+  <div id="eventList" aria-live="polite" aria-label="List view of events"></div>
+</div>
+
+<!-- Modal -->
+<div id="promoModal" style="display: none; position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);
+  justify-content: center; align-items: center; z-index: 1000;">
+  <div style="background: white; padding: 20px; border-radius: 8px;
+    max-width: 500px; width: 90%; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;">
+    <button id="closeModal" aria-label="Close modal" style="position: absolute; top: 10px; right: 15px;
+      font-size: 20px; font-weight: bold; color: #333; cursor: pointer; background: none; border: none;">&times;</button>
+    <h2 id="modalTitle" style="color: #CB6015;"></h2>
+    <p id="modalDescription" style="margin-top: 10px; white-space: pre-wrap;"></p>
+  </div>
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>
