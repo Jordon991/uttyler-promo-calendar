@@ -85,7 +85,7 @@ const iconMap = {
     '2025-10-22': [
       { type: 'athletic', sport: 'm_soccer', title: 'M. Soccer vs. Texas A&M International' },
       { type: 'athletic', sport: 'w_soccer', title: 'W. Soccer vs. St. Marys' },
-      { type: 'promo', title: 'Glow Night', description: 'Join us as we light up the pitch at Citizens 1st Bank-Perkins Field blue for an exciting Glow Night. We will be giving away Orange UT Tyler Soccer shirts as well as various items that glow orange! *Women's Game' }
+      { type: 'promo', title: 'Glow Night', description: 'Join us as we light up the pitch at Citizens 1st Bank-Perkins Field blue for an exciting Glow Night. We will be giving away Orange UT Tyler Soccer shirts as well as various items that glow orange! *Womens Game' }
     ],
     '2025-10-29': [
       { type: 'athletic', sport: 'w_soccer', title: 'W. Soccer vs. ENMU' }
@@ -308,6 +308,7 @@ const date = new Date(Number(yyyy), Number(mm) - 1, Number(dd));
 
 
 renderCalendar();
+
 
 
 
