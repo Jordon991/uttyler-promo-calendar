@@ -95,6 +95,9 @@ const iconMap = {
       { type: 'athletic', sport: 'volleyball', title: 'Volleyball vs. Sul Ross State' },
       { type: 'promo', title: 'Halloween Costume Contest', description: 'Come wearing a costume and be entered into a costume contest, judged by the fans! Winner will receive a $250 gift card.' }
     ],
+    '2025-11-01': [
+      { type: 'athletic', sport: 'volleyball', title: 'Volleyball vs. Western New Mexico' }
+    ],
     '2025-11-14': [
       { type: 'athletic', sport: 'volleyball', title: 'Volleyball vs. TWU' },
       { type: 'promo', title: 'Fan Appreciation', description: 'We want to thank all who help contrbute to the success of UT Tyler Athletics. Whether it be faculty, staff, students, or our community, we appreciate you all! Free hats for the first 100 fans! There will also be raffle drawings throughout the game. Remember to wear blue!' },
@@ -299,5 +302,6 @@ const date = new Date(Number(yyyy), Number(mm) - 1, Number(dd));
     eventListEl.appendChild(dayBlock);
   });
 }
+
 
 renderCalendar();
