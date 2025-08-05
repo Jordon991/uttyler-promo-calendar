@@ -87,7 +87,6 @@ const iconMap = {
       { type: 'athletic', sport: 'w_soccer', title: 'W. Soccer vs. St. Marys' }
     ],
     '2025-10-29': [
-      { type: 'athletic', sport: 'm_soccer', title: 'M. Soccer vs. UT Dallas' },
       { type: 'athletic', sport: 'w_soccer', title: 'W. Soccer vs. ENMU' },
       { type: 'promo', title: 'Blue Out', description: 'Join us as we paint the pitch at Citizens 1st Bank-Perkins Field blue!' }
     ],
@@ -98,7 +97,8 @@ const iconMap = {
     '2025-11-01': [
       { type: 'athletic', sport: 'volleyball', title: 'Volleyball vs. Western New Mexico' }
     ],'2025-11-05': [
-      { type: 'athletic', sport: 'm_soccer', title: 'M. Soccer vs. UT Dallas' }
+      { type: 'athletic', sport: 'm_soccer', title: 'M. Soccer vs. UT Dallas' },
+      { type: 'promo', title: 'Blue Out', description: 'Join us as we paint the pitch at Citizens 1st Bank-Perkins Field blue!' }
     ],
     '2025-11-14': [
       { type: 'athletic', sport: 'volleyball', title: 'Volleyball vs. TWU' },
@@ -307,4 +307,5 @@ const date = new Date(Number(yyyy), Number(mm) - 1, Number(dd));
 
 
 renderCalendar();
+
 
