@@ -97,6 +97,8 @@ const iconMap = {
     ],
     '2025-11-01': [
       { type: 'athletic', sport: 'volleyball', title: 'Volleyball vs. Western New Mexico' }
+    ],'2025-11-05': [
+      { type: 'athletic', sport: 'm_soccer', title: 'M. Soccer vs. UT Dallas' }
     ],
     '2025-11-14': [
       { type: 'athletic', sport: 'volleyball', title: 'Volleyball vs. TWU' },
@@ -305,3 +307,4 @@ const date = new Date(Number(yyyy), Number(mm) - 1, Number(dd));
 
 
 renderCalendar();
+
